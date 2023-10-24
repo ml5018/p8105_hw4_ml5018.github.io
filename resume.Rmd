@@ -1,0 +1,85 @@
+---
+title: "Resume of Mengxiao Luan"
+date: "Latest update on 2023-10-24"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+## Contact Information
+
+* Name: MENGXIAO LUAN
+* Phone Number: 929-343-0352
+* Email Address: ml5018@cumc.columbia.edu
+* Address: 50 Haven Avenue, Room #912, New York, New York, 10032
+
+----------------------------------------------
+
+## Education
+
+**COLUMBIA UNIVERSITY, MAILMAN SCHOOL OF PUBLIC HEALTH --New York**
+
+-Master of Science(MS), Biostatistics expected May 2025 
+-In Progress
+-Relevant Coursework: Data Science, Biostatistical Methods
+
+**TSINGHUA UNIVERSITY --Beijing**
+
+-Bachelor of Engineering(BE), Biomedical Engineering, June 2023                -3.62/4.0 GPA
+-Concentration on Tissue Engineering
+
+----------------------------------------------
+
+## Research Experience
+
+**LABORATORY OF MULTI-SCALE BIOSYSTEMS ENGINEERING --Beijing**
+
+-Biological Research Intern, Supervisor: Dr. Yanan Du                    
+-Spring and Summer 2023
+
+* Participated in wet experiments and relevant data processing of research on cell and vesicle therapy for liver fibrosis. Some results of the lab remained unpublished.
+* Designed and carried out experiments exploring preparation of hybridized vesicles as a refinement for existing methods. The results were used for thesis for graduation and remained undisclosed.
+
+**TSINGHUA BIOMEDICAL MICRO -SYSTEM LABORATORY --Beijing**
+
+-Project Team Member, Supervisor: Dr. Hongzhang Wang                         -Autumn 2022
+
+* Collaborated on preparation and examination of fabricated sensors from liquid metal, aimed at pulse and blood pressure measurement. The project was designed as a practicum approved by department of Biomedical Engineering at Tsinghua University.
+
+**DALIAN UNIVERSITY OF TECHNOLOGY --Dalian, Liaoning Province**
+
+-Voluntary Research Assistant, Supervisor: Dr. Kairong Qin                   -Summer 2021
+
+* Participated in data processing of new model to predict cavopulmonary pressure head in Fontan blood pump. The project results were later published as a conference paper.
+* Participated in data processing of newly designed algorithm for inferring velocity and pressure field from sparse concentration field. The project results were later published as a conference paper.
+
+----------------------------------------------
+
+## Work Experience
+
+**BOAO BIOLOGICAL GROUP CO., LTD --Beijing**
+
+-Industrial Investigation Intern, Supervisor: Jiankang Zhang                 -Summer 2022
+
+* Worked in team to investigate and survey on the current development of life science laboratory intelligent automation application industry. The project was designed as a practicum approved by department of Biomedical Engineering at Tsinghua University.
+
+**TSINGHUA UNIVERSITY --Beijing**
+
+-Volunteering Team Member                                         
+-Winter 2020 and Spring 2021
+
+* Collaborated to investigate the current situation of COVID-19 pandemic and relevant charity career.
+* Collaborated to Investigate the precise prevention and control of COVID-19 pandemic in Beijing.
+* Work in groups to enter and check the nucleic acid testing data of Beijing.
+
+----------------------------------------------
+
+# Skills
+
+* Proficient with Microsoft Office, WPS and Adobe. 
+* Skilled in statistical programs including C++, Python, R, SPSS and Matlab. 
+* Some knowledge of REDCap and SAS.
+* Native in Chinese(Mandarin). Fluent in English.
+
+Click [here](index.html) and go back to the index page.
