@@ -1,0 +1,74 @@
+---
+title: "Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+
+library(tidyverse)
+library(plotly)
+library(p8105.datasets)
+
+data("rest_inspec")
+
+rest_inspec = 
+  rest_inspec |>
+  filter(!is.na(score),
+         boro == "STATEN ISLAND") |>
+  mutate(
+    cuisine_description = 
+      str_replace(
+        cuisine_description, 
+        "\\(Cuban, Dominican, Puerto Rican, South & Central American\\)",
+        ""),
+    cuisine_description = 
+      str_replace(
+        cuisine_description, 
+        ", including water, sodas, juices, etc.",
+        "")) |>
+  select(cuisine_description, dba, building, street, score)
+```
+
+We will focus on the restaurants located on Broadway, exploring the correlation between their geopgraphical location, cuisine specialty and inspection results.
+
+Click [here](index.html) to get back to the index page.
+
+Column {data-width=450}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+rest_inspec |>
+  mutate(text_label = str_c("dba:",dba,
+                            "\ncuisine:", cuisine_description,
+                            "\nscore:", score)) |>
+  plot_ly(x = ~street, y = ~building, color = ~street,
+          type = "scatter", mode = "markers", text = ~text_label, alpha = 0.5)
+```
+
+Column {data-width=550}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+rest_inspec |> 
+  mutate(cuisine_description = fct_reorder(cuisine_description, score)) |> 
+  plot_ly(y = ~score, color = ~cuisine_description, 
+          type = "box", colors = "viridis")
+```
+
+### Chart C
+
+```{r}
+rest_inspec |>
+  count(cuisine_description) |>
+  mutate(cuisine_description = fct_reorder(cuisine_description, n)) |> 
+  plot_ly(x = ~cuisine_description, y = ~n, color = ~cuisine_description, 
+          type = "bar", colors = "viridis")
+```
